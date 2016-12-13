@@ -6,7 +6,7 @@ import Foundation
 
 
 func charactersToRot(input: Character) -> String{
-    let alphabet: [Character: String] = ["a":"0", "b":"1", "c":"2", "d":"3", "e":"4", "f":"5", "g":"6", "h":"7", "i":"8", "j":"9", "k":"10", "l":"11", "m":"12", "n":"13", "o":"14", "p":"15", "q":"16", "r":"17", "s":"18", "t":"19", "u":"20", "v":"21", "w":"22", "x":"23", "y":"24", "z":"25", "1":"A", "2":"B", "3":"C", "4":"D", "5":"E", "6":"F", "7":"G", "8":"H", "9":"I", "0":"J"]
+    let alphabet: [Character: String] = ["a":"13", "b":"14", "c":"15", "d":"16", "e":"17", "f":"18", "g":"19", "h":"20", "i":"21", "j":"22", "k":"23", "l":"24", "m":"25", "n":"26", "o":"27", "p":"28", "q":"29", "r":"30", "s":"31", "t":"32", "u":"33", "v":"34", "w":"35", "x":"36", "y":"37", "z":"38", "1":"A", "2":"B", "3":"C", "4":"D", "5":"E", "6":"F", "7":"G", "8":"H", "9":"I", "0":"J"]
     guard alphabet[input] != nil else{
         return String(input)
     }
@@ -24,3 +24,4 @@ func stringToRot13P2(input: String) -> String {
 stringToRot13P2(input: "candy!11!")
 stringToRot13P2(input: "Bugs!#45")
 stringToRot13P2(input: "dogs!1234")
+stringToRot13P2(input: " i am 1337")
